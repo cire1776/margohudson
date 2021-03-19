@@ -9,6 +9,21 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Alex Brush`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`400`, `700`, `800`],
+          },
+        ],
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
