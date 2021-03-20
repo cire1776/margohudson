@@ -164,6 +164,9 @@ main {
     .life-story {
       grid-row: 2 / span2;
 
+      p {
+        margin-bottom: 1rem;
+      }
       .read-more {
         display: block;
         margin-top: 1rem;
