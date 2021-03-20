@@ -3,26 +3,12 @@ module.exports = {
     title: "margo-hudson",
   },
   plugins: [
+    `gatsby-plugin-preload-fonts`,
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Alex Brush`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Roboto`,
-            variants: [`400`, `700`],
-          },
-        ],
-      },
-    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
