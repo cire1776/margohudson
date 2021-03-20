@@ -1,20 +1,4 @@
-$primary-color: rgb(0, 110, 81);
-$dark-accent-color: rgb(1, 67, 45);
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  background-color: white;
-  width: 100%;
-  height: 100%;
-}
+@import "../common";
 
 .container {
   min-height: 100vh;
@@ -23,12 +7,28 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1000;
+
   h1 {
-    font-family: "Alex Brush", cursive;
+    font-family: "Alex Brush";
     font-weight: 400;
     font-size: 3rem;
     text-align: center;
     padding-top: 2.5rem;
+  }
+
+  & a {
+    text-decoration: none;
+    color: black;
+
+    &:visited {
+      color: black;
+    }
   }
 
   nav {
@@ -43,27 +43,35 @@ header {
   }
 
   aside {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 8vh;
     background-color: $primary-color;
+    color: white;
+    padding: 2rem;
+    font-family: Roboto;
+    font-size: 1.5rem;
   }
 }
 
 main {
   padding: 0;
+  padding-top: 3.75rem;
   padding-bottom: 8rem;
   width: 100%;
   height: 100%;
 
-  .five-tips {
+  .five-tips-intro {
     display: flex;
 
     figure {
       width: 50%;
       height: 65vh;
+      background-color: $primary-color;
       background-image: url("../images/Margo-Hudson-GED-graduate-and-tutor-at-Seeds-of-Literacy.jpg");
       background-size: cover;
-      background-position: 50% 50%;
+      background-position: center 0;
       background-repeat: no-repeat;
     }
 
@@ -91,10 +99,11 @@ main {
 
       a {
         display: block;
-        margin-top: 1.5rem;
+        margin-top: 3rem;
         color: white;
         font-family: Roboto;
         font-size: 1.25rem;
+        text-align: center;
         text-decoration: none;
 
         &:hover {
@@ -150,9 +159,15 @@ main {
 
     .life-story {
       grid-row: 2 / span2;
+
+      .read-more {
+        display: block;
+        margin-top: 1rem;
+        text-decoration: none;
+      }
     }
 
-    .quotation {
+    blockquote {
       position: relative;
 
       figure {
@@ -164,7 +179,7 @@ main {
         background-image: url("../images/pexels-photo-6140710.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 20% 50%;
+        background-position: 100% 0%;
       }
 
       p {
@@ -194,12 +209,13 @@ main {
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 8rem;
+  min-height: 9rem;
+  padding-top: 3rem;
   background-color: $primary-color;
   color: white;
   text-align: center;
@@ -208,8 +224,59 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2rem;
-    padding-top: 0.35rem;
+    min-height: 2rem;
+    padding: 0.5rem;
+    padding-top: 0.5rem;
     background-color: $dark-accent-color;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .five-tips-intro {
+    flex-direction: column;
+
+    figure {
+      width: 100% !important;
+    }
+
+    article {
+      width: 100% !important;
+      max-height: 45vh !important;
+
+      h1 {
+        left: 2rem !important;
+        line-height: 1 !important;
+        margin: 6rem 4rem 0 0 !important;
+        padding: 0;
+        font-size: 8vw !important;
+        word-wrap: none;
+
+        .drop-cap {
+          margin: -1.75rem 0 0 20vw;
+          font-size: 10rem;
+        }
+      }
+    }
+  }
+
+  .speaker {
+    display: block !important;
+
+    blockquote {
+      figure {
+        margin-top: 2rem !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .drop-cap {
+    margin: -1.75rem 0 0 17vw !important;
+  }
+
+  footer {
+    min-height: 9rem;
+    padding-top: 1.5rem;
   }
 }
