@@ -44,9 +44,9 @@ const IndexPage = () => {
               finally passing.
             </p>
             <p>
-              Margo now tutors twice a week at Seeds, helping students like
-              herself. She is an inspirational example of what is possible when
-              you persevere.
+              Margo now tutors several times a week at Seeds, helping students
+              like herself. She is an inspirational example of what is possible
+              when you persevere.
             </p>
             <Link className="read-more" to="/about">
               Read More
