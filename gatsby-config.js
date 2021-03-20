@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "margo-hudson",
+    siteUrl: "https://margohudson.netlify.app",
   },
   plugins: [
     `gatsby-plugin-preload-fonts`,
