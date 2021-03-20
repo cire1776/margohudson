@@ -18,12 +18,24 @@ function MainHeader({ barQuote }) {
       </h1>
       <nav>
         <ul>
-          <li>About Margo</li>
-          <li>Photo Gallery</li>
-          <li>Events</li>
-          <li>Books</li>
-          <li>Media</li>
-          <li>Resources</li>
+          <li>
+            <Link to="/about">About Margo</Link>
+          </li>
+          <li>
+            <Link to="/gallery">Photo Gallery</Link>
+          </li>
+          <li>
+            <Link to="/events">Events</Link>
+          </li>
+          <li>
+            <Link to="/books">Books</Link>
+          </li>
+          <li>
+            <Link to="/media">Media</Link>
+          </li>
+          <li>
+            <Link to="/resources">Resources</Link>
+          </li>
         </ul>
       </nav>
       {barQuote && <aside>{barQuote}</aside>}
