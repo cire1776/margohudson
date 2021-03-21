@@ -100,7 +100,7 @@ function FiveTips() {
         </section>
         <CallToAction />
         <section className="step-5 reverse">
-          <figure>Need Image</figure>
+          <figure></figure>
           <article>
             <h1>5. Finish One Goal</h1>
             <h1>...Then Reach for Another!</h1>
