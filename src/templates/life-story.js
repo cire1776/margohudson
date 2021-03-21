@@ -10,10 +10,10 @@ export default function Template({ data }) {
   return (
     <div className="container">
       <MainHeader barQuote="Something wise about margo" />
-      <main
-        className="margos-story"
-        dangerouslySetInnerHTML={{ __html: html }}
-      ></main>
+      <main className="margos-story">
+        <figure></figure>
+        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      </main>
       <MainFooter />
     </div>
   );
