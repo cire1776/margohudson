@@ -1,0 +1,77 @@
+@import "../common";
+
+.events {
+  margin-top: 11rem;
+
+  h1 {
+    text-align: center;
+  }
+
+  section {
+    min-height: 30vh;
+
+    article {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      h1 {
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+      }
+
+      aside {
+        margin: 1rem;
+        position: relative;
+        width: 350px;
+        height: 150px;
+        padding: 0.5rem;
+        text-align: center;
+        background-color: $light-accent-color;
+
+        h1 {
+          margin-top: 0.25rem;
+        }
+
+        .description {
+          margin-bottom: 0.5rem;
+        }
+
+        .location {
+          margin-bottom: 0.5rem;
+        }
+
+        .public {
+          // display: block;
+          position: absolute;
+          bottom: 2px;
+          font-style: italic;
+          width: 90%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .past-events {
+    width: 75%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    h1 {
+      margin-top: 2rem;
+    }
+
+    p {
+      font-weight: 700;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+  }
+}

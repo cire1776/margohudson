@@ -44,6 +44,14 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `./src/data/`,
+      },
+    },
+    `gatsby-transformer-csv`,
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "markdown",

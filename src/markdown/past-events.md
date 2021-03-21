@@ -1,0 +1,49 @@
+---
+slug: "past-events"
+---
+
+I have spoken about how adult literacy changed my life at:
+
+- Connections: Health, Wellness, Advocacy
+- Laura’s Home
+- Zelma George Family Shelter
+- Norma Herr Community Women’s Shelter
+- 2100 Lakeside Men’s Emergency Shelter
+- Seeds of Literacy
+- Toastmasters - Hudson Chapter
+- Life Exchange Center
+- Redeemer Crisis Center
+- CMHA FSS
+- Lincoln West High School
+- Westside Community House
+- Tri-C Orientation
+- Tri-C Success Week
+- Permanent Supportive Housing Health Fair
+- United Healthcare Ohio Connected Advisory Meeting
+- Collinwood Library
+- Cleveland Foundation
+- Stella Maris
+- Bishop Cosgrove Center Digital Literacy Class
+- Polaris Aspire Graduation(Keynote speaker)
+- Greater Cleveland Food Bank
+- Jobs Plus Fair
+- Creative Mornings Cleveland
+- Madison Community Elementary
+- Haven Home
+- Hitchcock Center
+- Salvation Army - Survivors of Human Trafficking
+- Urban Squash Cleveland
+- Joseph’s Home
+- Salvation Army- Correctional Department
+- Laure’s Home Resources Fair
+- Joseph Center
+- Bountiful Basement
+- Blessed Trinity Parish / Produce Give Away
+- Salvation Army correctional department ( men’s house meeting)
+- John Marshall High School Community Fair
+- City Mission Crossroad Men's Shelter
+- Ridell
+- Cuyahoga County Literacy Crisis event
+- Judge Nancy‘s Russo Reentry program
+- Seeds of Literacy Board Meeting
+- Community Garden Caravan Event

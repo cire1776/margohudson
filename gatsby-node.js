@@ -20,9 +20,20 @@ async function createBooks(createPage, graphql, reporter) {
   });
 }
 
+async function createEvents(createPage, graphql, reporter) {
+  const pageTemplate = require.resolve(`./src/templates/events.js`);
+
+  createPage({
+    path: "events",
+    component: pageTemplate,
+    context: {},
+  });
+}
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
   await createLifeStory(createPage, graphql, reporter);
   await createBooks(createPage, graphql, reporter);
+  await createEvents(createPage, graphql, reporter);
 };
