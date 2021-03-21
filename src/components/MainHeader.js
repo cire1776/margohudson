@@ -19,7 +19,7 @@ function MainHeader({ barQuote }) {
       <nav>
         <ul>
           <li>
-            <Link to="/about">About Margo</Link>
+            <Link to="/life-story">About Margo</Link>
           </li>
           <li>
             <Link to="/gallery">Photo Gallery</Link>
