@@ -20,6 +20,7 @@
 
     h1 {
       font-size: 1.75rem;
+      margin-bottom: 1rem;
     }
 
     ul.reading-list {
@@ -46,11 +47,11 @@
     color: white;
   }
 
-  ul.recommendations {
+  ul {
     padding: 3rem;
     margin: 3rem auto;
     width: 50%;
-    min-width: 300px;
+    min-width: 400px;
 
     li {
       font-size: 1.75rem;
@@ -82,6 +83,7 @@
 
   .books-i-recommend {
     ul {
+      min-width: 90%;
       li {
         font-size: 5vw !important;
       }
