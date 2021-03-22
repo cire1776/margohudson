@@ -7,8 +7,6 @@ import "./books.scss";
 
 export default function Books({ data }) {
   const { reading, recommended } = data;
-  console.log(reading);
-
   return (
     <div className="container">
       <MainHeader barQuote="Something wise about books" />

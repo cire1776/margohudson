@@ -7,7 +7,6 @@ import "./events.scss";
 
 function presentEvents(events) {
   if (events) {
-    console.log(events);
     events = events.filter((event) => event.date !== "no more events");
   }
   if (!events || events.length === 0) {
