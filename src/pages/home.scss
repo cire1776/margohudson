@@ -84,6 +84,7 @@ main {
       color: white;
       width: 50%;
       height: 65vh;
+      min-height: 350px;
 
       h1 {
         font-family: Roboto;
@@ -286,5 +287,25 @@ footer {
   footer {
     min-height: 9rem;
     padding-top: 1.5rem;
+  }
+}
+
+@media screen and (max-height: 575px) {
+  header {
+    position: absolute;
+  }
+
+  .five-tips-intro {
+    article {
+      min-height: 300px !important;
+
+      h1 {
+        margin-top: 4rem !important;
+      }
+
+      .drop-cap {
+        margin: -1.75rem 0 0 17vw !important;
+      }
+    }
   }
 }
