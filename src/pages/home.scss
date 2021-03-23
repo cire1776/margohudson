@@ -4,6 +4,9 @@
   min-height: 100vh;
   height: 100%;
   position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 header {
@@ -56,6 +59,20 @@ header {
     padding: 2rem;
     font-family: Roboto;
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-height: 575px) {
+  .container {
+    // needed to force container to expand
+    //   when header position is absoute.
+    border: 1px solid $primary-color;
+  }
+
+  header {
+    position: absolute;
+    //   top: 0;
+    //   left: 0;
   }
 }
 
@@ -237,12 +254,6 @@ footer {
     padding: 0.5rem;
     padding-top: 0.5rem;
     background-color: $dark-accent-color;
-  }
-}
-
-@media screen and (max-height: 575px) {
-  header {
-    position: absolute;
   }
 }
 
