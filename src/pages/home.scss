@@ -91,6 +91,7 @@ main {
         font-size: 3.5rem;
         line-height: 1.5;
         margin: 12rem 0 0 0;
+        outline: 1px solid red;
       }
 
       .drop-cap {
@@ -240,6 +241,31 @@ footer {
   }
 }
 
+@media screen and (min-width: 600px) and (max-height: 850px) {
+  header {
+    position: absolute;
+  }
+
+  .five-tips-intro {
+    figure {
+      min-height: 500px;
+    }
+    article {
+      min-height: 500px !important;
+
+      h1 {
+        margin-left: -10rem !important;
+        // margin-right: -1rem !important;
+        margin-top: 20vh !important;
+      }
+
+      .drop-cap {
+        margin: -1.75rem 0 0 5vw !important;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .five-tips-intro {
     flex-direction: column;
@@ -287,25 +313,5 @@ footer {
   footer {
     min-height: 9rem;
     padding-top: 1.5rem;
-  }
-}
-
-@media screen and (max-height: 575px) {
-  header {
-    position: absolute;
-  }
-
-  .five-tips-intro {
-    article {
-      min-height: 300px !important;
-
-      h1 {
-        margin-top: 4rem !important;
-      }
-
-      .drop-cap {
-        margin: -1.75rem 0 0 17vw !important;
-      }
-    }
   }
 }
