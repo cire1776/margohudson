@@ -30,6 +30,14 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "gallery",
+        path: "./src/gallery/",
+      },
+      __key: "gallery",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "pages",
         path: "./src/pages/",
       },
@@ -54,10 +62,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "markdown",
-        path: "./src/markdown/",
+        name: "content",
+        path: "./src/content/",
       },
-      __key: "markdown",
+      __key: "content",
     },
   ],
 };
