@@ -10,7 +10,7 @@ import "./gallery.scss";
 export default function Gallery({ data }) {
   const { gallery } = data;
   const images = gallery.nodes;
-
+  console.log(images);
   return (
     <div className="container">
       <MainHeader barQuote="Something wise about galleries" />
@@ -20,7 +20,10 @@ export default function Gallery({ data }) {
             const imageActual = getImage(image.frontmatter.image);
             return (
               <figure key="a">
-                <GatsbyImage image={imageActual} alt={image.frontmatter.title} />
+                <GatsbyImage
+                  image={imageActual}
+                  alt={image.frontmatter.title}
+                />
                 <figcaption>
                   <div dangerouslySetInnerHTML={{ __html: image.html }}></div>
                 </figcaption>
