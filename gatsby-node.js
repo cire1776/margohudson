@@ -40,6 +40,16 @@ async function createMedia(createPage, graphql, reporter) {
   });
 }
 
+async function createGallery(createPage, graphql, reporter) {
+  const pageTemplate = require.resolve(`./src/templates/gallery.js`);
+
+  createPage({
+    path: "gallery",
+    component: pageTemplate,
+    context: {},
+  });
+}
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
@@ -47,4 +57,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   await createBooks(createPage, graphql, reporter);
   await createEvents(createPage, graphql, reporter);
   await createMedia(createPage, graphql, reporter);
+  await createGallery(createPage, graphql, reporter);
+};
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = [
+    `type MarkdownRemark implements Node { frontmatter: Frontmatter }`,
+    `type Frontmatter {
+      # you may need to adapt this line depending on the node type and key
+      # that you want to create the relationship for
+      image: File @link(by: "relativePath")
+    }`,
+  ];
+  createTypes(typeDefs);
 };
