@@ -3,5 +3,6 @@ title: A third item
 date: 2021-03-25T19:18:57.107Z
 credits: Eric Russell
 image: pexels-photo-6140686.jpeg
-description: Eating lunch in the park
 ---
+
+Eating lunch in the park
