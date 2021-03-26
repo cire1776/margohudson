@@ -1,8 +1,7 @@
 ---
-slug: "life-story"
+slug: life-story
 ---
-
-From markdown. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab neque nemo maxime eius! Earum ea dolore, itaque soluta deserunt animi sed amet voluptas eum laboriosam dicta numquam consectetur autem maiores!
+From admin. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab neque nemo maxime eius! Earum ea dolore, itaque soluta deserunt animi sed amet voluptas eum laboriosam dicta numquam consectetur autem maiores!
 
 Similique molestiae facilis alias, consequatur voluptatum blanditiis est fugit repellat tenetur debitis aliquid. Cumque itaque ducimus, deleniti minima, eius perspiciatis ratione voluptatum alias tenetur veniam maiores soluta accusantium voluptates recusandae animi suscipit tempore! Rem, ducimus dolores.
 
