@@ -3,34 +3,18 @@ import { graphql } from "gatsby";
 
 import MainHeader from "../components/MainHeader";
 import MainFooter from "../components/MainFooter";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Gallery from "../components/Gallery";
 
 import "./gallery.scss";
 
-export default function Gallery({ data }) {
+export default function GalleryPage({ data }) {
   const { gallery } = data;
   const images = gallery.nodes;
-  console.log(images);
   return (
     <div className="container">
       <MainHeader barQuote="Something wise about galleries" />
       <main>
-        <section className="gallery">
-          {images.map((image) => {
-            const imageActual = getImage(image.frontmatter.image);
-            return (
-              <figure key="a">
-                <GatsbyImage
-                  image={imageActual}
-                  alt={image.frontmatter.title}
-                />
-                <figcaption>
-                  <div dangerouslySetInnerHTML={{ __html: image.html }}></div>
-                </figcaption>
-              </figure>
-            );
-          })}
-        </section>
+        <Gallery images={images} itemsPerRow={3} />
       </main>
       <MainFooter />
     </div>
@@ -44,6 +28,7 @@ export const pageQuery = graphql`
       sort: { order: DESC, fields: frontmatter___date }
     ) {
       nodes {
+        id
         html
         frontmatter {
           title
@@ -51,8 +36,12 @@ export const pageQuery = graphql`
           credits
           image {
             childImageSharp {
+              resize {
+                aspectRatio
+              }
               gatsbyImageData(
-                width: 400
+                layout: CONSTRAINED
+                width: 500
                 placeholder: BLURRED
                 formats: [AUTO, WEBP, AVIF]
               )
