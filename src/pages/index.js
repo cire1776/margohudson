@@ -36,7 +36,7 @@ const IndexPage = () => {
               {" "}
               Margo Hudson is passionate about learning. She earned her GED
               <sup>®</sup> in 2012 from{" "}
-              <a href="http://seedsofliteracty.org">Seeds of Literacy</a> in
+              <a href="http://seedsofliteracy.org">Seeds of Literacy</a> in
               Cleveland, Ohio.
             </p>
             <p>
