@@ -26,7 +26,12 @@ function MainHeader({ barQuote }) {
       <nav>
         <label htmlFor="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger" ref={checkbox} />
-        <div className="screen" onClick={closeNavBar}></div>
+        <div
+          aria-hidden={true}
+          className="screen"
+          onClick={closeNavBar}
+          onKeyDown={closeNavBar}
+        ></div>
         <ul>
           <li>
             <Link to="/life-story">About Margo</Link>
