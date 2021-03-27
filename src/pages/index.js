@@ -60,7 +60,7 @@ const IndexPage = () => {
             <p>John Smith, CEO of John Smith, Inc.</p>
           </blockquote>
           <div className="availability">
-            <a href="#">Check Availability</a>{" "}
+            <a href="check-availability">Check Availability</a>{" "}
           </div>
         </section>
       </main>

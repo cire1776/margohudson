@@ -1,0 +1,44 @@
+.container {
+  .availability {
+    margin-top: 9.5rem;
+  }
+
+  figure {
+    background-image: url("../images/pexels-photo-707676.jpeg");
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100%;
+    min-height: 20vh;
+  }
+
+  form {
+    flex-direction: column;
+    margin: 2rem auto;
+
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      margin: 2rem auto 1rem;
+      padding: 1rem;
+
+      label,
+      input {
+        display: block;
+        margin: 0 1rem 0 0rem;
+      }
+
+      label {
+        margin-left: 2rem;
+      }
+      input {
+        width: 50ch;
+      }
+    }
+
+    button {
+      margin: 1rem auto;
+      width: 20%;
+    }
+  }
+}
