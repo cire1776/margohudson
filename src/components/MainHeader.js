@@ -4,6 +4,12 @@ import { Link } from "gatsby";
 import "./MainHeader.scss";
 
 function MainHeader({ barQuote }) {
+  const checkbox = React.useRef(null);
+
+  function closeNavBar() {
+    checkbox.current.checked = false;
+  }
+
   return (
     <header>
       <Helmet>
@@ -18,6 +24,9 @@ function MainHeader({ barQuote }) {
         <Link to="/">Margo Hudson</Link>
       </h1>
       <nav>
+        <label htmlFor="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" ref={checkbox} />
+        <div className="screen" onClick={closeNavBar}></div>
         <ul>
           <li>
             <Link to="/life-story">About Margo</Link>
