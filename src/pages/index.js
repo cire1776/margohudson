@@ -16,7 +16,7 @@ const IndexPage = () => {
           <figure></figure>
           <article>
             <h1>
-              <span class="drop-cap">5</span>
+              <span className="drop-cap">5</span>
               Tips
               <br />
               for
