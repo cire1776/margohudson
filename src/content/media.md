@@ -2,6 +2,10 @@
 slug: "media"
 ---
 
+- March 23, 2021
+
+  [One year later: How the stay-at-home order impacted the lives of Ohioans](https://www.wkyc.com/article/news/health/coronavirus/one-year-later-stay-at-home-order-impacted-ohioans/95-24568081-d9f5-474c-b9de-8101b0140991)
+
 - November 29, 2018
 
   [After Earning Her GED at 52, Margo Hudson Now a Nationally-recognized Tutor](https://www.cleveland.com/expo/life-and-culture/erry-2018/11/75c62336d19751/after-earning-her-ged-at-52-ma.html)

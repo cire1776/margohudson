@@ -74,3 +74,9 @@ collections:
                   widget: boolean,
                   required: false,
                 }
+      - label: "Honors"
+        name: "honors"
+        file: "src/content/honors.md"
+        fields:
+          - { label: "Slug", name: "slug", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }

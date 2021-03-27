@@ -50,6 +50,16 @@ async function createGallery(createPage, graphql, reporter) {
   });
 }
 
+async function createHonors(createPage, graphql, reporter) {
+  const pageTemplate = require.resolve(`./src/templates/honors.js`);
+
+  createPage({
+    path: "honors",
+    component: pageTemplate,
+    context: {},
+  });
+}
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
@@ -58,6 +68,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   await createEvents(createPage, graphql, reporter);
   await createMedia(createPage, graphql, reporter);
   await createGallery(createPage, graphql, reporter);
+  await createHonors(createPage, graphql, reporter);
 };
 
 exports.createSchemaCustomization = ({ actions }) => {

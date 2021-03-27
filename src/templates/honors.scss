@@ -1,0 +1,48 @@
+@import "../common";
+
+.honors {
+  margin-top: 8.1rem;
+  width: 100%;
+  padding: 2rem;
+
+  figure {
+    height: 20vh;
+    width: 100%;
+
+    margin: 0 auto 2rem auto;
+
+    background-image: url("../images/adult-education-2706977__480.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 3rem auto 2rem auto;
+  }
+
+  div {
+    // width: 75%;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+
+    font-size: 1.75rem;
+
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-bottom: 1rem;
+
+      p:first-child {
+        font-weight: 700;
+      }
+    }
+
+    a,
+    a:visited {
+      color: $light-accent-color;
+    }
+  }
+}
