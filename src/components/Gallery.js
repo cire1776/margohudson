@@ -1,5 +1,5 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { chunk, sum } from "lodash";
+import { chunk } from "lodash";
 import React from "react";
 
 const Gallery = ({ images, itemsPerRow }) => {
@@ -11,7 +11,6 @@ const Gallery = ({ images, itemsPerRow }) => {
       <section className="gallery">
         {rows.map((row) => {
           // Sum aspect ratios of images in the given row
-          const rowAspectRatioSum = sum(row.map((image) => image.aspectRatio));
           return (
             // <div className="row">
             <>

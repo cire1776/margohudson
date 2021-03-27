@@ -18,9 +18,7 @@ function presentEvents(events) {
         <h1>{`${event.date}, ${event.time}`}</h1>
         <p className="description">{event.description}</p>
         <p className="location">{event.location}</p>
-        <p className="public">
-          {event.public === "yes" ? "Public" : "Private"}
-        </p>
+        <p className="public">{event.public ? "Public" : "Private"}</p>
       </aside>
     );
   });
@@ -50,9 +48,8 @@ export default Events;
 
 export const pageQuery = graphql`
   {
-    events: allUpcomingEventsCsv {
-      upcoming: nodes {
-        id
+    events: yaml {
+      upcoming: upcoming_events {
         date
         time
         description
@@ -60,7 +57,6 @@ export const pageQuery = graphql`
         public
       }
     }
-
     pastEvents: markdownRemark(frontmatter: { slug: { eq: "past-events" } }) {
       html
     }
