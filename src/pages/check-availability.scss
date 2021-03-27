@@ -1,10 +1,14 @@
+@import "../common";
+
 .container {
+  width: 100vw;
+
   .availability {
     margin-top: 9.5rem;
 
     figure {
       background-image: url("../images/pexels-photo-707676.jpeg");
-      background-repeat: no-repeat;
+      background-repeat: none;
       background-position: cover;
       width: 100%;
       min-height: 20vh;
@@ -14,12 +18,16 @@
       flex-direction: column;
       margin: 2rem auto;
 
-      fieldset {
+      & > fieldset {
         display: flex;
         flex-direction: column;
         width: 75%;
         margin: 2rem auto 1rem;
         padding: 1rem;
+
+        .contact-info {
+          margin: 0 auto;
+        }
 
         label,
         input {
@@ -31,13 +39,36 @@
           margin-left: 2rem;
         }
         input {
+          padding: 0.5rem;
           width: 50ch;
+          border: none;
+          border-bottom: 1px solid $primary_color;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          outline: none;
+        }
+        input:focus {
+          border: none;
+          border-bottom: 4px solid $primary_color;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          outline: none;
+        }
+
+        fieldset {
+          margin: 2rem auto;
         }
       }
 
       button {
         margin: 1rem auto;
-        width: 20%;
+        padding: 1rem 0.5rem;
+        width: 30%;
+        min-width: 200px;
+        border-radius: 10px;
+        border: none;
+        background-color: $primary-color;
+        color: white;
       }
     }
   }

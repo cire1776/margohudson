@@ -13,26 +13,29 @@ export default function CheckAvailability() {
         <form name="check-availability" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="check-availability" />{" "}
           <fieldset>
-            <label htmlFor="name">
-              Name
-              <input type="text" name="name" id="name" />
-            </label>
-            <label htmlFor="organization">
-              Organization
-              <input type="text" name="organization" id="organization" />
-            </label>
-            <label htmlFor="phone">
-              Phone
-              <input type="text" name="phone" id="phone" />
-            </label>
-            <label htmlFor="email">
-              Email
-              <input type="text" name="email" id="email" />
-            </label>
+            <div className="contact-info">
+              <label htmlFor="name">
+                Name
+                <input type="text" name="name" id="name" />
+              </label>
+              <label htmlFor="organization">
+                Organization
+                <input type="text" name="organization" id="organization" />
+              </label>
+              <label htmlFor="phone">
+                Phone
+                <input type="text" name="phone" id="phone" />
+              </label>
+              <label htmlFor="email">
+                Email
+                <input type="text" name="email" id="email" />
+              </label>
+            </div>
 
-            <fieldset>
+            <fieldset className="possible-dates">
+              <legend>Please Provide Three Possible Dates and Times</legend>
               <label htmlFor="possible-date-1">
-                Possible Date and Time
+                Possiblilty One
                 <input
                   type="text"
                   name="possible-date-1"
@@ -40,7 +43,7 @@ export default function CheckAvailability() {
                 />
               </label>
               <label htmlFor="possible-date-2">
-                Possible Date and Time
+                Possiblity Two
                 <input
                   type="text"
                   name="possible-date-2"
@@ -48,7 +51,7 @@ export default function CheckAvailability() {
                 />
               </label>
               <label htmlFor="possible-date-3">
-                Possible Date and Time
+                Possiblility Three
                 <input
                   type="text"
                   name="possible-date-3"
