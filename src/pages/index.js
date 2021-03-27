@@ -48,7 +48,7 @@ const IndexPage = () => {
               like herself. She is an inspirational example of what is possible
               when you persevere.
             </p>
-            <Link className="read-more" to="/about">
+            <Link className="read-more" to="/life-story">
               Read More
             </Link>
           </article>
