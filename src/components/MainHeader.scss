@@ -49,7 +49,6 @@ header {
       padding-top: 0;
       margin-top: -0.5rem;
       font-size: 2rem;
-      // outline: 3px solid red;
     }
 
     .screen {
@@ -85,8 +84,17 @@ header {
 
     input:checked ~ ul {
       display: flex;
-      li a {
-        color: white;
+      li {
+        span {
+          display: inline-block;
+          margin-left: 0;
+          width: 100%;
+          outline: 1px solid yellow;
+        }
+        a {
+          width: 100%;
+          color: white;
+        }
       }
 
       li a:hover {
@@ -96,6 +104,90 @@ header {
 
     input {
       display: none;
+    }
+
+    .primary-menu {
+      position: relative;
+
+      .bubble {
+        position: absolute;
+        left: 95% !important;
+        top: calc(50% - 55px) !important;
+        height: 110px !important;
+        max-height: 150px !important;
+        min-height: 0 !important;
+        padding-top: 0.5rem;
+        background: #ffffff;
+        border-radius: 10px;
+        z-index: 1010;
+      }
+
+      .bubble::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -5px;
+
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-right: 5px solid white;
+
+        display: block;
+        width: 0;
+        height: 0;
+        z-index: 1100;
+      }
+
+      .bubble::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-right: 6px solid darkgray;
+
+        display: block;
+        width: 0;
+        z-index: 1;
+      }
+      span {
+        padding-bottom: 0.25rem;
+        color: white;
+      }
+
+      span:hover,
+      li:hover > span {
+        color: goldenrod !important;
+      }
+
+      span:hover ~ .secondary-menu,
+      .secondary-menu:hover {
+        display: block;
+        position: absolute;
+        top: 2.25rem;
+        left: 7.5vw;
+        width: 150px;
+        height: 80px;
+        z-index: 2000;
+        border: 1px solid darkgray;
+      }
+
+      ul.secondary-menu {
+        display: none;
+        li {
+          line-height: 2;
+          margin-bottom: 1rem;
+
+          a {
+            color: black !important;
+          }
+
+          a:hover {
+            color: goldenrod !important;
+          }
+        }
+      }
     }
   }
 
@@ -138,6 +230,36 @@ header {
         border-top: 1px solid lightgrey;
         border-bottom: 1px solid lightgrey;
         padding: 1rem;
+      }
+
+      span {
+        color: black !important;
+        padding-bottom: 0.25rem;
+      }
+
+      span:hover,
+      li:hover > span {
+        color: goldenrod;
+      }
+
+      span:hover ~ .secondary-menu,
+      .secondary-menu:hover {
+        display: block;
+        position: absolute;
+        top: 2.25rem;
+        left: 7.5vw;
+        width: 150px;
+        height: 80px;
+        z-index: 2000;
+        border: 1px solid darkgray;
+      }
+
+      ul.secondary-menu {
+        display: none;
+        li {
+          line-height: 2;
+          color: black;
+        }
       }
     }
   }

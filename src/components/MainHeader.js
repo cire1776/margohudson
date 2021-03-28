@@ -33,8 +33,16 @@ function MainHeader({ barQuote }) {
           onKeyDown={closeNavBar}
         ></div>
         <ul>
-          <li>
-            <Link to="/life-story">About Margo</Link>
+          <li className="primary-menu">
+            <span>About Margo</span>
+            <ul className="secondary-menu bubble">
+              <li>
+                <Link to="/life-story">Life Story</Link>
+              </li>
+              <li>
+                <Link to="/honors">Honors</Link>
+              </li>
+            </ul>
           </li>
           <li>
             <Link to="/gallery">Photo Gallery</Link>
