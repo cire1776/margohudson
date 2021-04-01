@@ -16,6 +16,7 @@
     "preload-fonts": "gatsby-preload-fonts"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "gatsby": "^3.0.1",
     "gatsby-image": "^3.1.0",
     "gatsby-plugin-image": "^1.1.1",
