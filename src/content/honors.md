@@ -2,6 +2,8 @@
 slug: honors
 ---
 
+- April 2, 2021: <span>Margo Hudosn Honored by Panera Rocky River</span>
+
 - June 18, 2019: <span>Margo Hudson Honored by Who’s Who in Black Cleveland 2019</span>
 
 - May 15, 2019: <span>Margo Hudson Provides Testimony to Ohio Senate Higher Education Committee</span>

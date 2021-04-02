@@ -2,7 +2,7 @@
 slug: "past-events"
 ---
 
-I have spoken about how adult literacy changed my life at:
+Marg has spoken about how adult literacy changed her life at:
 
 - Connections: Health, Wellness, Advocacy
 - Laura’s Home
@@ -35,7 +35,7 @@ I have spoken about how adult literacy changed my life at:
 - Urban Squash Cleveland
 - Joseph’s Home
 - Salvation Army- Correctional Department
-- Laure’s Home Resources Fair
+- Laura’s Home Resources Fair
 - Joseph Center
 - Bountiful Basement
 - Blessed Trinity Parish / Produce Give Away

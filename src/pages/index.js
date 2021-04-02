@@ -40,7 +40,7 @@ const IndexPage = () => {
               Cleveland, Ohio.
             </p>
             <p>
-              She spent 11 years studying and took the test 6 times before
+              She spent 11 years studying and took the tesnpt 6 times before
               finally passing.
             </p>
             <p>
